@@ -17,7 +17,7 @@ jobs:
       run: echo "${{ secrets.GDRIVE_SERVICE_KEY }}" > gdrive_key.json
 
     - name: Download model weights
-      run: bash weights_download.sh
+      run: bash retina_ai_retfound_project/weights_download.sh
 
     - name: Remove key for security
       run: rm gdrive_key.json

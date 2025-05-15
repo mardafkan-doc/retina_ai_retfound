@@ -23,7 +23,7 @@ jobs:
       run: rm gdrive_key.json
 
     - name: Build Docker image
-      run: docker build -t retina-ai .
+      run: docker build -t retina-ai ./retina_ai_retfound_project
 
     - name: Save image and zip
       run: |

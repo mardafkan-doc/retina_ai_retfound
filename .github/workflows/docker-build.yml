@@ -13,6 +13,9 @@ jobs:
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
 
+    - name: Install gdown
+      run: pip install gdown
+
     - name: Create service account key file
       run: echo "${{ secrets.GDRIVE_SERVICE_KEY }}" > gdrive_key.json
 
